@@ -4,11 +4,10 @@ import kotlinx.datetime.LocalDateTime
 
 data class MessageWithThread(
     val id: Long,
-    val threadId: Long,
-    val userId: Long,
+    val thread: Thread,
+    val user: User,
     val message: String,
-    val postedAt: LocalDateTime?,
-    val updatedAt: LocalDateTime?,
-    val deleted: Boolean?,
-    val thread: Thread?
+    val postedAt: LocalDateTime,
+    val updatedAt: LocalDateTime,
+    val deleted: Boolean
 )
